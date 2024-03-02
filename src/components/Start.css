@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: "karla", sans-serif;
+    background-color: #F5F7FB;
+    color: #293264;
+}
+
+button{
+    font-family: "karla", sans-serif;
+}
+
+.start-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 500px;
+}
+
+.start-container h1, .start-container p{
+    margin: 0px;
+}
+
+.start-container h1{
+    margin: 20px;
+    font-size: 4rem;
+}
+
+.start-container p{
+    padding: 20px 40px;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.start-btn{
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    width: 192px;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    cursor: pointer;
+}
+
+select{
+    border-radius: 20px;
+    border: 1px solid #293264;
+    background-color: transparent;
+    padding: 3px;
+}
+
+.questions-container{
+    padding: 10px 20px;
+}
+
+.question-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.all-options{
+    display: flex;
+    gap: 40px;
+    justify-content: center;;
+}
+
+.option{
+    background-color: transparent;
+    border: 1px solid #4D5B9E;
+    border-radius: 7px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.correct-answer{
+    margin: 5px;
+    justify-self: left;
+    text-align: left;
+    align-self: left;
+}
+
+.marks-container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.check-btn{
+    background-color: #4D5B9E;
+    border: none;
+    border-radius: 10px;
+    height: 52px;
+    width: 190px;
+    margin-top: 20px;
+    color: #F5F7FB;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #D6DBF5;
+}
+.correct-selected{
+    background-color: green;
+}
