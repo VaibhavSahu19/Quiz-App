@@ -34,7 +34,7 @@ export default function Quiz(props) {
             }
         };
         
-        fetchData(); // Fetch data when component mounts
+        fetchData();
     }, []);
 
     if(dataArray === null){

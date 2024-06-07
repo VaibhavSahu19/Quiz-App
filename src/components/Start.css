@@ -1,19 +1,19 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0px;
     font-family: "karla", sans-serif;
     background-color: #F5F7FB;
     color: #293264;
 }
 
-button{
+button {
     font-family: "karla", sans-serif;
 }
 
-.start-container{
+.start-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,20 +22,20 @@ button{
     height: 500px;
 }
 
-.start-container h1, .start-container p{
+.start-container h1, .start-container p {
     margin: 0px;
 }
 
-.start-container h1{
+.start-container h1 {
     margin: 20px;
     font-size: 4rem;
 }
 
-.start-container p{
+.start-container p {
     padding: 20px 40px;
 }
 
-.filters{
+.filters {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ button{
     margin: 10px;
 }
 
-.start-btn{
+.start-btn {
     margin: 10px;
     border: none;
     border-radius: 15px;
@@ -54,31 +54,32 @@ button{
     cursor: pointer;
 }
 
-select{
+select {
     border-radius: 20px;
     border: 1px solid #293264;
     background-color: transparent;
     padding: 3px;
 }
 
-.questions-container{
+.questions-container {
     padding: 10px 20px;
 }
 
-.question-container{
+.question-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.all-options{
+.all-options {
     display: flex;
-    gap: 40px;
-    justify-content: center;;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.option{
+.option {
     background-color: transparent;
     border: 1px solid #4D5B9E;
     border-radius: 7px;
@@ -86,23 +87,25 @@ select{
     width: auto;
     padding: 10px;
     cursor: pointer;
+    flex: 1 1 100px;
+    text-align: center;
 }
 
-.correct-answer{
+.correct-answer {
     margin: 5px;
     justify-self: left;
     text-align: left;
     align-self: left;
 }
 
-.marks-container{
+.marks-container {
     display: flex;
     justify-content: center;
     align-items: baseline;
     gap: 20px;
 }
 
-.check-btn{
+.check-btn {
     background-color: #4D5B9E;
     border: none;
     border-radius: 10px;
@@ -114,9 +117,83 @@ select{
     cursor: pointer;
 }
 
-.selected{
+.selected {
     background-color: #D6DBF5;
 }
-.correct-selected{
+
+.correct {
     background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .start-container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .start-container h1 {
+        font-size: 2.5rem;
+        margin: 10px;
+    }
+
+    .start-container p {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .start-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .filters {
+        margin: 5px;
+    }
+
+    .questions-container {
+        padding: 5px 10px;
+    }
+
+    .all-options {
+        gap: 10px;
+    }
+
+    .option {
+        padding: 8px;
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .check-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .start-container h1 {
+        font-size: 2rem;
+    }
+
+    .start-container p {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    .start-btn, .check-btn {
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .option {
+        padding: 6px;
+        flex: 1 1 calc(100% - 20px);
+    }
 }
