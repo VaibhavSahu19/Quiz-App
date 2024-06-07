@@ -1,8 +1,8 @@
-# React + Vite
+# Quiz App
+(Responsiveness for small screens is not added currently)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a quiz app that takes the difficulty and the category from the user and sets up 5 questions based on it. It then fetches quiz from API named 'Open Trivia DB'.
+It is implemented using React + Vite.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# https://vaibhav-sahu-quiz-app.vercel.app/
