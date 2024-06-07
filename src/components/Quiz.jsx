@@ -38,7 +38,7 @@ export default function Quiz(props) {
     }, []);
 
     if(dataArray === null){
-        return <div>loading...</div>
+        return <h2 className="loading">loading...</h2>
     }
 
     function receiveAnswers(answer) {

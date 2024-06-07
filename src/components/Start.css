@@ -9,6 +9,7 @@ body {
     color: #293264;
 }
 
+
 button {
     font-family: "karla", sans-serif;
 }
@@ -35,6 +36,11 @@ button {
     padding: 20px 40px;
 }
 
+.loading{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
 .filters {
     display: flex;
     justify-content: center;
