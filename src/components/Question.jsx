@@ -33,12 +33,15 @@ export default function Question(props) {
                 isSelected: answer.id === selectedOption.id ? !answer.isSelected : false
             }))
         );
+        
 
-        setSelectedAnswer({
-            questionId: props.questionId,
-            correctAnswer: correctAnswer,
-            selectedAnswer: selectedOption
-        });
+        if (!props.isComplete) {
+            setSelectedAnswer({
+                questionId: props.questionId,
+                correctAnswer: correctAnswer,
+                selectedAnswer: selectedOption
+            });
+        }
     }
 
     function shuffleArray(array) {
@@ -77,7 +80,6 @@ export default function Question(props) {
             <div className="all-options">
                 {options}
             </div>
-            {props.isComplete && <div>{selectedAnswer.selectedAnswer}</div>}
             {props.isComplete && <div className="correct-answer"> Correct Answer: {correctAnswer}</div>}
             <div className="break"></div>
         </div>
